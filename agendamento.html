@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendamento | src/img/luarmarinho.png</title>
+
+    <link rel="stylesheet" href="./src/agendamento.css">
+    <link rel="stylesheet" href="./src/reset.css">
+
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+
+    <header class="topo">
+       <img class="logo" src="./src/img/logo.png" alt="">
+
+    </header>
+
+ <section class="nav">
+        <nav class="navegacao">
+
+
+            <ul class="menu" id="menu">
+                <section class="nav">
+                    <nav class="navegacao">
+                        <ul class="menu" id="menu">
+
+                            <span class="indicador"></span>
+
+                            <li class="produto-aba">
+                                <a href="">Início</a>
+                            </li>
+
+                            <li class="produto-aba">
+                                <a href="sobre.html">Sobre nós</a>
+                            </li>
+
+                            <li class="produto-aba">
+                                <a href="servicos.html">Serviços</a>
+                            </li>
+
+                            <li class="produto-aba">
+                                <a href="index.html">Produtos</a>
+                            </li>
+
+                            <li class="produto-aba">
+                                <a href="contato.html">Contato</a>
+                            </li>
+
+                            <li class="produto-aba">
+                                <a href="agendamento.html" class="agendar">Agendar</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </section>
+            </ul>
+
+        </nav>
+    </section>
+
+    <main class="pagina-agendamento">
+
+    
+
+        <section class="area-formulario">
+
+            <div class="titulo-formulario">
+
+                <div>
+                    <h2>Faça seu agendamento</h2>
+                    <p>Preencha os dados abaixo para solicitar seu horário.</p>
+                </div>
+            </div>
+
+
+            <form id="formAgendamento">
+
+                <div class="campo">
+                    <label for="nome">Seu nome completo</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+
+                <div class="campo">
+                    <label for="telefone">Seu WhatsApp</label>
+
+                    <input
+                        type="tel"
+                        id="telefone"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+                </div>
+
+
+                <div class="campo">
+                    <label for="servico">Qual serviço deseja realizar?</label>
+
+                    <select id="servico" required>
+                        <option value="">Selecione um serviço</option>
+
+                        <option value="Serviço 1">Serviço 1</option>
+                        <option value="Serviço 2">Serviço 2</option>
+                        <option value="Serviço 3">Serviço 3</option>
+                        <option value="Serviço 4">Serviço 4</option>
+                    </select>
+                </div>
+
+
+                <div class="linha-campos">
+
+                    <div class="campo">
+                        <label for="data">Escolha a data</label>
+
+                        <input
+                            type="date"
+                            id="data"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="horario">Escolha o horário</label>
+
+                        <select id="horario" required disabled>
+                            <option value="">Selecione a data primeiro</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="campo">
+                    <label for="observacao">
+                        Alguma observação? <span>(opcional)</span>
+                    </label>
+
+                    <textarea
+                        id="observacao"
+                        placeholder="Conte-nos algo importante sobre seu atendimento..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+
+                <div class="resumo" id="resumo">
+
+                    <h3>Resumo do agendamento</h3>
+
+                    <p> <strong>Nome:</strong> <span id="resumoNome">Não informado</span></p>
+
+                    <p> <strong>Serviço:</strong> <span id="resumoServico">Não selecionado</span></p>
+
+                    <p> <strong>Data:</strong> <span id="resumoData">Não selecionada</span></p>
+
+                    <p> <strong>Horário:</strong> <span id="resumoHorario">Não selecionado</span></p>
+
+                </div>
+
+
+                <button type="submit" class="botao-agendar">
+                    Solicitar agendamento
+                    <span>→</span>
+                </button>
+
+                <p class="aviso">
+                    Seu horário será confirmado após a verificação
+                    da disponibilidade pelo nosso atendimento.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>MARESIA </p>
+        <span>Um momento especial começa com autocuidado.</span>
+    </footer>
+
+</body>
+</html>

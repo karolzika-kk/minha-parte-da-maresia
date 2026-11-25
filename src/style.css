@@ -1,0 +1,278 @@
+/* CABEÇALHO */
+body {
+    background-color: rgb(108, 203, 209);
+
+}
+
+.inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(./img/fundo-mar.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    flex-direction: column;
+}
+
+.produtos-cabecalho {
+    width: 1920px;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.logo {
+    position: absolute;
+    height: 300px;
+    margin-top: 130px;
+    border-radius: 100%;
+    border: 10px solid rgba(0, 175, 175, 0.815);
+
+}
+
+.creme-um {
+
+    height: 200px;
+
+}
+
+.creme-dois {
+
+    height: 240px;
+
+}
+
+.serum {
+    height: 200px;
+}
+
+.perfume {
+    height: 240px;
+}
+
+/* CABEÇALHO */
+
+/* CORPO DO WEBSITE */
+
+
+.carrossel {
+    width: 100%;
+    max-width: 1600px;
+    margin: 60px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    overflow: hidden;
+}
+
+.produtos-janela {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.produtos-trilho {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    transition: transform 0.8s cubic-bezier(.22,.61,.36,1);
+    will-change: transform;
+}
+
+.produto-item {
+    flex: 0 0 calc((100% - 50px) / 3);
+    width: calc((100% - 50px) / 3);
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.controle-concha {
+    flex: 0 0 70px;
+    width: 70px;
+    height: 80px;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    transition: transform 0.3s;
+}
+
+.controle-concha img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.controle-concha:hover {
+    transform: scale(1.12);
+}
+
+.controle-concha:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+@media (max-width: 850px) {
+    .produto-item {
+        flex-basis: calc((100% - 25px) / 2);
+        width: calc((100% - 25px) / 2);
+    }
+}
+
+@media (max-width: 550px) {
+    .produto-item {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .controle-concha {
+        flex-basis: 40px;
+        width: 40px;
+    }
+}
+
+
+
+
+/* BARRA DE NAVEGAÇÃO */
+
+
+.nav .navegacao {
+    width: 900px;
+    height: 67px;
+
+    margin: 70px auto 0 auto;
+
+    background-color: rgb(68, 192, 199) !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 20px;
+    border-radius: 20px;
+
+    box-sizing: border-box;
+}
+ 
+.menu {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    list-style: none;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* ITENS DO MENU */
+.menu .produto-aba {
+    position: relative;
+    z-index: 1;
+}
+
+/* LINKS */
+.menu .produto-aba a {
+    display: block;
+    padding: 12px 15px;
+
+    color: #006b75;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: color 0.3s ease;
+}
+
+/* TEXTO QUANDO PASSAR O MOUSE */
+.menu .produto-aba a:hover {
+    color: #006b75;
+}
+
+/* FUNDO BRANCO ANIMADO */
+.indicador {
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    height: 40px;
+    width: 0;
+
+    background-color: white;
+    border-radius: 50px;
+
+    transform: translateY(-50%);
+
+    transition:
+        transform 0.4s ease,
+        width 0.4s ease;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+
+    .banner {
+        height: 140px;
+    }
+
+    .logo {
+        width: 135px;
+        height: 135px;
+        margin-top: 100px;
+    }
+
+    .navegacao {
+        justify-content: flex-end;
+        min-height: 65px;
+
+    }
+
+
+
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 205px;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        gap: 22px;
+
+        padding: 25px;
+
+        background: #39B8BF;
+
+        z-index: 10;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+}
+
+
+
+
+

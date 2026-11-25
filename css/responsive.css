@@ -1,0 +1,164 @@
+
+/* TABLETS */
+
+@media (max-width: 950px) {
+
+    .header {
+        padding: 0 4%;
+    }
+
+    .packages-section {
+        padding: 70px 5%;
+    }
+
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 80px 7%;
+    }
+
+    .benefits {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+
+    .header {
+        height: auto;
+        min-height: 75px;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 22px;
+        padding-top: 10px;
+        border-top: 1px solid #edf3f2;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .cart-button {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 65px 7%;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-decoration {
+        font-size: 90px;
+        right: 5%;
+    }
+
+    .benefits {
+        padding: 30px 8%;
+        gap: 25px;
+    }
+
+    .benefit {
+        width: 100%;
+    }
+
+    .packages-section {
+        padding: 65px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .package-image {
+        height: 220px;
+    }
+
+    .about {
+        padding: 55px 8%;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .about h2 {
+        font-size: 31px;
+    }
+
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
+    }
+
+    .cart-sidebar.active {
+        right: 0;
+    }
+
+}
+
+
+/* TELAS MUITO PEQUENAS */
+
+@media (max-width: 380px) {
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .cart-button span:not(.cart-count) {
+        display: none;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .price-area h4 {
+        font-size: 17px;
+    }
+
+    .price-area button {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+}

@@ -1,0 +1,462 @@
+/* ==================================
+   IDENTIDADE VISUAL MARESIA
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9f8f7;
+    color: #176f73;
+    /* background-image: url(./img/agendar-fundo2.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+
+/* CABEÇALHO */
+
+.topo {
+    width: 100%;
+    min-height: 160px;
+    padding: 20px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0, 100, 100, 0.08);
+}
+
+
+
+.logo {
+    position: absolute;
+    height: 200px;
+    border-radius: 100%;
+    border: 10px solid rgba(0, 175, 175, 0.815);
+    margin-top: 70px;
+}
+
+
+
+
+/* APRESENTAÇÃO */
+
+.pagina-agendamento {
+    width: 100%;
+    min-height: 85vh;
+    padding: 65px 8%;
+
+    
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 65px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.apresentacao {
+    max-width: 480px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background: #c8efeb;
+    color: #168b8c;
+
+    padding: 10px 20px;
+    border-radius: 30px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.apresentacao h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.15;
+
+    color: #176f73;
+    margin: 25px 0;
+}
+
+.apresentacao h1 span {
+    color: #35aeb0;
+    font-style: italic;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #598d8e;
+    max-width: 400px;
+}
+
+.detalhe-mar {
+    margin-top: 35px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    color: #299c9e;
+    font-size: 14px;
+}
+
+
+/* FORMULÁRIO */
+
+.area-formulario {
+    width: 50%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+
+    box-shadow: 0 15px 45px rgba(23, 111, 115, 0.10);
+}
+
+.titulo-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+
+.titulo-formulario h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #176f73;
+}
+
+.titulo-formulario p {
+    color: #86a9a9;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 9px;
+    color: #397f81;
+}
+
+.campo label span {
+    font-weight: normal;
+    color: #9ab5b5;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #d8e9e7;
+    border-radius: 10px;
+
+    outline: none;
+    background: #f9fdfc;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #397f81;
+
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #35aeb0;
+    box-shadow: 0 0 0 3px rgba(53, 174, 176, 0.10);
+}
+
+.campo input:disabled,
+.campo select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.linha-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* RESUMO */
+
+.resumo {
+    background: #eaf8f6;
+    border-left: 4px solid #35aeb0;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    margin: 10px 0 25px;
+}
+
+.resumo h3 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: #176f73;
+}
+
+.resumo p {
+    font-size: 13px;
+    margin: 9px 0;
+    color: #598d8e;
+}
+
+
+/* BOTÃO */
+
+.botao-agendar {
+    width: 100%;
+    padding: 17px;
+
+    background: #168f91;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-agendar span {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.botao-agendar:hover {
+    background: #087276;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(22, 143, 145, 0.2);
+}
+
+.aviso {
+    font-size: 11px;
+    color: #91aaaa;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #176f73;
+    color: #ffffff;
+
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    letter-spacing: 3px;
+    font-family: Georgia, serif;
+    margin-bottom: 8px;
+}
+
+footer span {
+    font-size: 12px;
+    color: #c5e8e5;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .pagina-agendamento {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 45px 6%;
+    }
+
+    .apresentacao {
+        max-width: 650px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .topo {
+        padding: 18px 5%;
+    }
+
+    .topo-direita {
+        display: none;
+    }
+
+    .marca span {
+        font-size: 21px;
+    }
+
+    .voltar {
+        font-size: 12px;
+    }
+
+    .pagina-agendamento {
+        padding: 35px 5%;
+    }
+
+    .area-formulario {
+        padding: 25px 18px;
+    }
+
+    .titulo-formulario h2 {
+        font-size: 20px;
+    }
+
+    .linha-campos {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
+
+
+.nav .navegacao {
+    width: 890px;
+    height: 67px;
+
+    margin: 70px auto 0 auto;
+
+    background-color: rgb(68, 192, 199) !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 20px;
+    border-radius: 20px;
+
+    box-sizing: border-box;
+}
+
+
+
+
+.menu {
+    width: 100%;
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+    gap: 20px;
+    list-style: none;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* ITENS DO MENU */
+.menu .produto-aba {
+    position: relative;
+    z-index: 1;
+}
+
+/* LINKS */
+.menu .produto-aba a {
+    display: block;
+    padding: 12px 15px;
+
+    color: #006b75;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: color 0.3s ease;
+}
+
+/* TEXTO QUANDO PASSAR O MOUSE */
+.menu .produto-aba a:hover {
+    color: #006b75;
+}
+
+/* FUNDO BRANCO ANIMADO */
+/* .indicador {
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    height: 40px;
+    width: 0;
+
+    background-color: white;
+    border-radius: 50px;
+
+    transform: translateY(-50%);
+
+    transition:
+        transform 0.4s ease,
+        width 0.4s ease;
+
+    z-index: 0;
+    pointer-events: none;
+} */
+
+
+/* LINKS DO MENU */
+.menu .produto-aba a {
+    display: block;
+    padding: 12px 15px;
+
+    color: #006b75;
+    text-decoration: none;
+    font-size: 15px;
+
+    border-radius: 50px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* AGENDAR BRANCO INICIALMENTE */
+.menu:not(:has(.produto-aba:hover)) .agendar {
+    background-color: white;
+}
+
+/* FUNDO BRANCO NO ITEM SOB O MOUSE */
+.menu .produto-aba:hover a {
+    background-color: white;
+}
+
+/* ESCONDE O INDICADOR ANTIGO */
+.indicador {
+    display: none;
+}
